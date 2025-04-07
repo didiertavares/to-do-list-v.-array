@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas | método Arrays</title>
+</head>
+<body>
+    <h1>LISTA DE TAREFAS</h1>
+    <ul>
+        <li>estudar</li>
+    </ul>
+    <button onclick="addtarefa()">Qual a próxima tarefa?</button>
+    <input></input>
+    <script>
+        
+        const listatarefas = []
+        const ul = document.querySelector("ul")
+
+        function addtarefa()    {
+            const input = document.querySelector("input")
+            const novatarefa = input.value
+            listatarefas.push(novatarefa)
+            console.log(listatarefas)
+            li.innertext = novatarefa
+            
+            ul.appendChild(li) 
+            render(listatarefas)
+            
+            input.value = ""
+        }
+        
+    </script>
+</body>
+</html>
