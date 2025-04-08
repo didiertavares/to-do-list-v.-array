@@ -7,9 +7,7 @@
 </head>
 <body>
     <h1>LISTA DE TAREFAS</h1>
-    <ul>
-        <li>estudar</li>
-    </ul>
+    <ul></ul>
     <button onclick="addtarefa()">Qual a próxima tarefa?</button>
     <input></input>
     <script>
@@ -18,16 +16,31 @@
         const ul = document.querySelector("ul")
 
         function addtarefa()    {
+
             const input = document.querySelector("input")
             const novatarefa = input.value
             listatarefas.push(novatarefa)
-            console.log(listatarefas)
-            li.innertext = novatarefa
+            let li = document.createElement("li")
+            li.innerText = novatarefa
             
-            ul.appendChild(li) 
-            render(listatarefas)
-            
+            ul.appendChild(li)
             input.value = ""
+
+            
+            //console.log(listatarefas)
+            //console.log(listatarefas.length)
+            //console.log(ul)
+            //console.log(li)
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
         }
         
     </script>
