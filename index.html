@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tarefas | método Arrays</title>
+    <title>Lista de Tarefas c/ checkbox | método Arrays</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>LISTA DE TAREFAS</h1>
-    <ul></ul>
     <button onclick="addtarefa()">Qual a próxima tarefa?</button>
     <input></input>
+    
+    <ul>
+        <li>
+        <div class="wrapper">
+            <input type="checkbox" id="check">
+            <label for="check"></label>
+        </div>
+        </li>
+    </ul>
+
+    
     <script>
         
         const listatarefas = []
@@ -20,11 +31,16 @@
             const input = document.querySelector("input")
             const novatarefa = input.value
             listatarefas.push(novatarefa)
+            console.log(listatarefas)
             let li = document.createElement("li")
-            li.innerText = novatarefa
+            console.log(li)
+            let label = document.querySelector("label")
+            label.innerText = novatarefa
+            console.log(label)
             
-            ul.appendChild(li)
-            input.value = ""
+            ul.appendChild("li")
+    
+        input.value = ""
 
             
             //console.log(listatarefas)
